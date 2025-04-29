@@ -53,11 +53,14 @@ namespace WindowsFormsApp4_str_arr
             arr[3] = "그 사람의 그림자는 그랬다.".Replace("그", "이");
             arr[4] = "삼성 갤럭시".Insert(2, " 애플");
             arr[5] = "오늘은 왠지 더 배고프다".Remove(7, 2);
-            string[] temp = new string[3];
-            temp = "이름, 나이, 전화번호".Split(',');
-            arr[6] = temp[0];
-            arr[7] = temp[1];
-            arr[8] = temp[2];
+            //arr[5] = "오늘은 왠지 더 배고프다".Remove("오늘은 왠지 더 배고프다".IndexOf("더"), 2);
+
+            string[] temp = "이름, 나이, 전화번호".Split(',');
+            //Trim() -> 문자열 양쪽 끝의 공백 삭제
+            arr[6] = temp[0].Trim();
+            arr[7] = temp[1].Trim();
+            arr[8] = temp[2].Trim();
+
             arr[9] = "우리 나라 만세".Substring(3, 2);
 
 
