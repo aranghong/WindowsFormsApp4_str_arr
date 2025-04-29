@@ -27,7 +27,7 @@ namespace WindowsFormsApp4_str_arr
             arr[2][0] = "질서 있는 퇴장".Contains("퇴").ToString();
             arr[3][0] = "그 사람의 그림자는 그랬다.".Replace("그", "이");
             arr[4][0] = "삼성 갤럭시".Insert(2, " 애플");
-            arr[5][0] = "오늘은 왠지 더 배고프다".Remove(7, 2);
+            arr[5][0] = "오늘은 왠지 더 배고프다".Remove(7, 2); 
             arr[6] = "이름, 나이, 전화번호".Split(',');
             arr[7][0] = "우리 나라 만세".Substring(3, 2);
 
